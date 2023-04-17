@@ -82,7 +82,7 @@ nav ul {
 }
 
     .invite-button:hover {
-        background-color: #b22222;
+        background-color: #354c6c; /* Change to darker blue */
     }
 
 /* About section styles */
