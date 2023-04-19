@@ -87,6 +87,7 @@ nav ul {
 
 /* About section styles */
 .about {
+    text-align: center;
     background-color: #1a1a1a;
     padding: 50px;
 }
