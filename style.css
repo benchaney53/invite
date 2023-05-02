@@ -1,178 +1,82 @@
-/* General styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* Media queries */
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background-color: #292929;
-}
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 40px 20px;
+  }
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
+  nav ul li {
+    margin: 0 20px;
+  }
 
-ul {
-    list-style: none;
-}
+  .hero h1 {
+    font-size: 6rem;
+  }
 
-/* Header styles */
-header {
-    background-color: #222;
-    padding: 10px;
-}
+  .hero p {
+    font-size: 2rem;
+  }
 
-nav ul {
+  .about {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    margin-top: 100px;
+    text-align: left;
+  }
+
+  .about h2 {
+    font-size: 4rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+    margin: 0 40px;
+  }
+
+  .about img {
+    max-width: 50%;
+  }
+
+  .games h2 {
+    font-size: 4rem;
+  }
+
+  .games li {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+  }
 }
 
-    nav ul li {
-        margin: 0 10px;
-    }
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 40px;
+  }
 
-        nav ul li a {
-            font-size: 1.2rem;
-        }
+  nav ul li {
+    margin: 0 30px;
+  }
 
-/* Hero section styles */
-.hero {
-    background-image: url("https://images.unsplash.com/photo-1551234088-9005c7bca09b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2FtZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    text-align: center;
-}
+  .hero h1 {
+    font-size: 8rem;
+  }
 
-    .hero h1 {
-        font-size: 4rem;
-        margin-bottom: 20px;
-        color: #fff;
-        text-shadow: 2px 2px #000;
-    }
+  .hero p {
+    font-size: 2.5rem;
+  }
 
-    .hero p {
-        font-size: 1.5rem;
-        margin-bottom: 40px;
-    }
+  .about h2 {
+    font-size: 5rem;
+  }
 
-.button-wrapper {
-    display: flex;
-    justify-content: center;
-}
+  .about p {
+    font-size: 1.8rem;
+    margin: 0 80px;
+  }
 
-.invite-button {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #1e2639; /* Change to dark blue */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-shadow: 1px 1px #000;
-    box-shadow: 2px 2px #000;
-}
-
-    .invite-button:hover {
-        background-color: #354c6c; /* Change to darker blue */
-    }
-
-/* About section styles */
-.about {
-    text-align: center;
-    background-color: #1a1a1a;
-    padding: 50px;
-}
-
-    .about h2 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-        color: #fff;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-bottom: 40px;
-    }
-
-/* Games section styles */
-.games {
-    background-color: #2f2f2f;
-    padding: 50px;
-}
-
-    .games h2 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-        color: #fff;
-    }
-
-    .games li {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-        .games li:hover {
-            background-color: #5b6f9f;
-        }
-
-/* Footer styles */
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-    footer p {
-        font-size: 1rem;
-    }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    nav ul li {
-        margin: 0 5px;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .about h2 {
-        font-size: 2.5rem;
-    }
-
-    .about p {
-        font-size: 1rem;
-    }
-
-    .games h2 {
-        font-size: 2.5rem;
-    }
-
-    .games li {
-        font-size: 1rem;
-    }
+  .games li {
+    width: 400px;
+    height: 400px;
+  }
 }
